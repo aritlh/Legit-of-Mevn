@@ -1,3 +1,12 @@
+## Rules of this challenge
+
+- This challenge will be completed over 30 days by doing it consistenly/d (#30DaysOfCode).
+- Accelerated learning is permissible.
+
+## Modules
+
+Modules used as references are [Full-Stack Web Development with Vue.js and Node](https://www.packtpub.com/product/full-stack-web-development-with-vuejs-and-node/9781788831147)
+
 ## What this challenge covers:
 
 - Learning about the technology stack - MongoDB, Node.js, Express.js, and Vue.js
