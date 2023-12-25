@@ -20,7 +20,7 @@ Modules used as references are [Full-Stack Web Development with Vue.js and Node]
 
 | Day | from | to | page|
 |----|----|----|----|
-|1| Preface | Introducing NPM| 12 | 
-|2| Introducing NPM | Introducing Node.js | 12 |
-|3| Introducing Node.js | Custom modules| 12 |
-|4| Custom modules| File naming conventions | 12 |
+|1| Preface | Introducing NPM| 1 - 12 | 
+|2| Introducing NPM | Introducing to Node.js | 12 - 24 |
+|3| Introducing to Node.js | Custom modules| 24 - 36 |
+|4| Custom modules| File naming conventions (Introducing to MVC) | 36 - 48 |
