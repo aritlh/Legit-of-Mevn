@@ -9,6 +9,9 @@
 
 ## Let's go
 
-| Day | from | to |
-|----|----|----|
-|1| Preface | Introducing NPM|
+| Day | from | to | page|
+|----|----|----|----|
+|1| Preface | Introducing NPM| 12 | 
+|2| Introducing NPM | Introducing Node.js | 12 |
+|3| Introducing Node.js | Custom modules| 12 |
+|4| Custom modules| File naming conventions | 12 |
