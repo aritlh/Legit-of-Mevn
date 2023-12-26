@@ -9,7 +9,7 @@ npm i
 npm install
 ```
 
-run server with this following:
+run server with the following:
 ```bash
 npm run server
 ```
