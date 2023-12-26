@@ -32,3 +32,5 @@ Branch [day6-10](https://github.com/ariesa4/legit-of-mevn/tree/day6-10)
 | Day | from | to | page|
 |----|----|----|----|
 |6|Installing Mongoose|Fetching a specific record|66 - 72|
+|7|Fetching a specific record|Benefits of REST API|72 - 84|
+|8|Benefits of REST API|Adding a POST endpoint in the users controller|84 - 96|
