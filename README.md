@@ -16,6 +16,8 @@ Modules used as references are [Full-Stack Web Development with Vue.js and Node]
 - Adding an authentication layer in the application
 - Adding the automation scripts and tests
 
+See the [tutorial](./TUTORIAL.md) for the project folder structure
+
 ## Let's go
 
 Branch [day1-5](https://github.com/ariesa4/legit-of-mevn/tree/day1-5)
@@ -34,4 +36,4 @@ Branch [day6-10](https://github.com/ariesa4/legit-of-mevn/tree/day6-10)
 |6|Installing Mongoose|Fetching a specific record|66 - 72|
 |7|Fetching a specific record|Benefits of REST API|72 - 84|
 |8|Benefits of REST API|Adding a POST endpoint in the users controller|84 - 96|
-|9|Adding a POST endpoint in the users controller|96 - 108|
+|9|Adding a POST endpoint in the users controller|Redefining the home page|96 - 108|
