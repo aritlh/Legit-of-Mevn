@@ -28,7 +28,7 @@ Branch [day1-5](https://github.com/ariesa4/legit-of-mevn/tree/day1-5)
 |4| Custom modules| File naming conventions | 36 - 48 |
 |5|File naming conventions|Installing Mongoose|48 - 66|
 
-Branch [day6-10](https://github.com/ariesa4/legit-of-mevn/tree/day-10)
+Branch [day6-10](https://github.com/ariesa4/legit-of-mevn/tree/day6-10)
 | Day | from | to | page|
 |----|----|----|----|
 |6|Installing Mongoose|Fetching a specific record|66 - 72|
