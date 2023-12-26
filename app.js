@@ -1,13 +1,27 @@
+require('dotenv').config()
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose')
 
 var app = express();
+
+// connect to mongodb
+mongoose.set('strictQuery', false)
+mongoose.connect(process.env.DB, () => {
+  console.log('Connection has been made')
+})
+  .catch((e) => {
+    console.error('App starting error:', e.stack)
+    process.exit(1)
+  })
+
 const fs = require('node:fs')
 
-//include controllers
+// include controllers
 fs.readdirSync('controllers').forEach((f) => {
   if (f.substr(-3) == '.js') {
     const route = require('./controllers/' + f)
