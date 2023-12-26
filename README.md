@@ -24,3 +24,4 @@ Modules used as references are [Full-Stack Web Development with Vue.js and Node]
 |2| Introducing NPM | Introducing to Node.js | 12 - 24 |
 |3| Introducing to Node.js | Custom modules| 24 - 36 |
 |4| Custom modules| File naming conventions | 36 - 48 |
+|5|File naming conventions|Installing Mongoose|48-66|
