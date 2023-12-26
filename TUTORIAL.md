@@ -8,6 +8,12 @@ npm i
 # OR
 npm install
 ```
+set the database env:
+```bash
+# .env
+
+DB=YOUR_DATABASE
+```
 
 run server with the following:
 ```bash
