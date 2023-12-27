@@ -1,5 +1,5 @@
 <template>
-    <button @click="counter++">{{ counter }}</button>
+    <v-btn @click="counter++">Click Button from Vuetify! {{ counter }}</v-btn>
 </template>
 
 <script setup>
