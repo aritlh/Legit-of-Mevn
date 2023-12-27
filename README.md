@@ -37,3 +37,4 @@ Branch [day6-10](https://github.com/ariesa4/legit-of-mevn/tree/day6-10)
 |7|Fetching a specific record|Benefits of REST API|72 - 84|
 |8|Benefits of REST API|Adding a POST endpoint in the users controller|84 - 96|
 |9|Adding a POST endpoint in the users controller|Redefining the home page|96 - 108|
+|10|Redefining the home page||108 - 120|
