@@ -1,17 +1,15 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <ul>
+    <li>
+      <router-link :to="{ name: 'home' }">Home</router-link>
+    </li>
+    <li>
+      <router-link :to="{ name: 'about' }">About</router-link>
+    </li>
+  </ul>
+  <router-view />
 </template>
 
-<script>
-import './assets/stylesheets/main.css'
-
-export default {
-  name: 'App'
-}
+<script setup>
+import { RouterView, RouterLink } from 'vue-router'
 </script>
-
-<style>
-
-</style>
