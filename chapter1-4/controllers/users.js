@@ -17,7 +17,7 @@ module.exports.controller = (app) => {
         })
     })
 
-    //add a new user
+    // add a new user
     app.post('/users', (req, res) => {
         const user = new User({
             name: req.body.name,
