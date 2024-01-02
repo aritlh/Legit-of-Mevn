@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="tw-text-red-500">This is about page</h1>
+        <h1 class="tw-text-2xl">Contact Page</h1>
     </div>
 </template>
   

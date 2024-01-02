@@ -13,6 +13,7 @@
     "vuetify": "^3.4.8"
   },
   "devDependencies": {
+    "@mdi/font": "^7.4.47",
     "@vitejs/plugin-vue": "^4.5.2",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
