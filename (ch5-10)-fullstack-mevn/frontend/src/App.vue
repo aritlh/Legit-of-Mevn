@@ -42,6 +42,11 @@
       </v-main>
     </v-layout>
   </v-card>
+  <footer>
+    <div class="tw-text-center tw-bg-[#ffffff]">
+      {{ new Date().getFullYear() }} — <strong>Vuetify with @.ariesaa</strong>
+    </div>
+  </footer>
 </template>
 
 <script>

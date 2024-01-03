@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser')
 const logger = require('morgan');
 const mongoose = require('mongoose')
+const fs = require('node:fs')
 
 const app = express();
 app.use(bodyParser.json())
@@ -22,7 +23,6 @@ mongoose.connect(process.env.DB, () => {
     process.exit(1)
   })
 
-const fs = require('node:fs')
 
 // include controllers
 fs.readdirSync('controllers').forEach((f) => {

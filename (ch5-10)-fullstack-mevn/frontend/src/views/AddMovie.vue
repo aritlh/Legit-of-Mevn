@@ -4,8 +4,8 @@
         <v-text-field v-model="name.value.value" :counter="10" :error-messages="name.errorMessage.value"
             label="Movie Name*"></v-text-field>
         <!-- Movie description -->
-        <v-text-field v-model="description.value.value" :error-messages="description.errorMessage.value"
-            label="Movie Description*"></v-text-field>
+        <v-textarea v-model="description.value.value" :error-messages="description.errorMessage.value" name="input-7-1"
+            variant="filled" label="Movie Description*" auto-grow></v-textarea>
         <!-- Movie release year -->
         <v-select v-model="release_year.value.value" :items="items" :error-messages="release_year.errorMessage.value"
             label="Movie Release Year*"></v-select>
@@ -25,6 +25,7 @@
 <script setup>
 import { useField, useForm } from 'vee-validate'
 import { ref } from 'vue'
+import axios from 'axios'
 
 const { handleSubmit, handleReset } = useForm({
     validationSchema: {
@@ -60,12 +61,30 @@ const items = ref([
     '2018',
     '2017',
     '2016',
-    '2015'
+    '2015',
+    '2014',
+    '2013',
+    '2012',
+    '2011',
+    '2010'
 ])
 
 const msg = ref('')
 
-const submit = handleSubmit(values => {
-    msg.value = JSON.stringify(values, null, 2)
+const submit = handleSubmit(async () => {
+    // msg.value = JSON.stringify(values, null, 2)
+    try {
+        await axios.post('http://localhost:8081/movies', {
+            name: name.value.value,
+            description: description.value.value,
+            release_year: release_year.value.value,
+            genre: genre.value.value
+        })
+
+        handleReset()
+        msg.value = 'Movie created successfully!'
+    } catch (error) {
+        msg.value = 'Failed to create movie: ' + error
+    }
 })
 </script>

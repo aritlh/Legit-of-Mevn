@@ -1,6 +1,6 @@
 ## Chapter 1 - 4
 
-In the `chapter1-4` folder, its contain building the RESTful API with Express and MongoDB with mongoose as the MongoDB object modeling lib for Node.js
+In the [(ch1-4)-restfulAPI-mongodb](./(ch1-4)-restfulAPI-express-mongodb/) folder, its contain building the RESTful API with Express and MongoDB with mongoose as the MongoDB object modeling lib for Node.js
 
 install all of packages
 ```bash
