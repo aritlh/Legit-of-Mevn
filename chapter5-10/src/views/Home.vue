@@ -1,10 +1,21 @@
 <template>
     <div>
         <h1 class="tw-text-2xl">Home Page</h1>
-        <p></p>
+        <div>{{ message }}</div>
     </div>
+    <v-btn color="primary" v-on:click="reply">Reply</v-btn>
 </template>
   
-<script setup>
+<script>
+export default {
+    data: () => ({
+        message: 'Hello there, how are you this morning?'
+    }),
+    methods: {
+        reply() {
+            this.message = 'Im doing great, thank you!'
+        }
+    }
+}
 </script>
   
