@@ -2,21 +2,24 @@
     <form @submit.prevent="submit">
         <!-- Movie name -->
         <v-text-field v-model="name.value.value" :counter="10" :error-messages="name.errorMessage.value"
-            label="Movie Name"></v-text-field>
+            label="Movie Name*"></v-text-field>
         <!-- Movie description -->
         <v-text-field v-model="description.value.value" :error-messages="description.errorMessage.value"
-            label="Movie Description"></v-text-field>
+            label="Movie Description*"></v-text-field>
         <!-- Movie release year -->
-        <v-select v-model="select.value.value" :items="items" :error-messages="select.errorMessage.value"
-            label="Movie Release Year"></v-select>
+        <v-select v-model="release_year.value.value" :items="items" :error-messages="release_year.errorMessage.value"
+            label="Movie Release Year*"></v-select>
         <!-- Movie genre -->
         <v-text-field v-model="genre.value.value" :error-messages="genre.errorMessage.value"
-            label="Movie Genre"></v-text-field>
+            label="Movie Genre*"></v-text-field>
         <!-- Submit movie -->
         <v-btn class="me-4" type="submit">Submit</v-btn>
         <!-- Clear movie -->
         <v-btn @click="handleReset">Clear</v-btn>
     </form>
+    <div class="tw-mt-4">
+        {{ msg }}
+    </div>
 </template>
 
 <script setup>
@@ -35,7 +38,7 @@ const { handleSubmit, handleReset } = useForm({
 
             return 'Please add movie description'
         },
-        select(value) {
+        release_year(value) {
             if (value) return true
 
             return 'Select an item.'
@@ -50,7 +53,7 @@ const { handleSubmit, handleReset } = useForm({
 
 const name = useField('name')
 const description = useField('description')
-const select = useField('select')
+const release_year = useField('release_year')
 const genre = useField('genre')
 
 const items = ref([
@@ -60,7 +63,9 @@ const items = ref([
     '2015'
 ])
 
+const msg = ref('')
+
 const submit = handleSubmit(values => {
-    alert(JSON.stringify(values, null, 2))
+    msg.value = JSON.stringify(values, null, 2)
 })
 </script>
