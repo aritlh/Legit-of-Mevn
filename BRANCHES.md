@@ -22,3 +22,4 @@ Branch [day11-15](https://github.com/ariesa4/legit-of-mevn/tree/day11-15)
 | Day | from | to | page|
 |----|----|----|----|
 |11|v-on|Communicating with servers|120 - 134|
+|12|Communicating with servers|Adding a flash message|134 - 146|
