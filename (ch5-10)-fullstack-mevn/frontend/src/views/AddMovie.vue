@@ -24,6 +24,7 @@
 
 <script setup>
 import { useField, useForm } from 'vee-validate'
+import VueSweetalert2 from 'sweetalert2'
 import { ref } from 'vue'
 import axios from 'axios'
 
@@ -82,9 +83,13 @@ const submit = handleSubmit(async () => {
         })
 
         handleReset()
-        msg.value = 'Movie created successfully!'
+        VueSweetalert2.fire('Success', 'Movie created successfully!')
+
+        // msg.value = 'Movie created successfully!'
+
     } catch (error) {
-        msg.value = 'Failed to create movie: ' + error
+        // msg.value = 'Failed to create movie: ' + error
+        VueSweetalert2.fire('Failed', `${error.toString()}<br>Please check your database connection!`)
     }
 })
 </script>

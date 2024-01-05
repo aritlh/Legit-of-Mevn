@@ -4,7 +4,9 @@
       <v-app-bar color="primary" prominent>
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer">
         </v-app-bar-nav-icon>
-        <v-toolbar-title>{{ title }}</v-toolbar-title>
+        <v-toolbar-title>
+          {{ title }}
+        </v-toolbar-title>
         <v-spacer></v-spacer>
       </v-app-bar>
       <!-- Navigation button -->
