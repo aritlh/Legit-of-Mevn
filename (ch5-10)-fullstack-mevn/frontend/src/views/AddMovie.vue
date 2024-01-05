@@ -17,9 +17,9 @@
         <!-- Clear movie -->
         <v-btn @click="handleReset">Clear</v-btn>
     </form>
-    <div class="tw-mt-4">
+    <!-- <div class="tw-mt-4">
         {{ msg }}
-    </div>
+    </div> -->
 </template>
 
 <script setup>

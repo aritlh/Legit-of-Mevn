@@ -1,11 +1,13 @@
 <template>
     <div class="tw-flex tw-flex-wrap tw-gap-4">
         <v-card v-for="movie in movies" :key="movie._id">
-            <div>
-                <v-card-title>{{ movie.name }}</v-card-title>
-                <v-card-subtitle>{{ movie.release_year }} - {{ movie.genre }}</v-card-subtitle>
-            </div>
-            <v-card-text>Description: {{ movie.description }}</v-card-text>
+            <router-link :to="`/movies/${movie._id}`">
+                <div>
+                    <v-card-title>{{ movie.name }}</v-card-title>
+                    <v-card-subtitle>{{ movie.release_year }} - {{ movie.genre }}</v-card-subtitle>
+                </div>
+                <v-card-text>Description: {{ movie.description }}</v-card-text>
+            </router-link>
         </v-card>
     </div>
 </template>
