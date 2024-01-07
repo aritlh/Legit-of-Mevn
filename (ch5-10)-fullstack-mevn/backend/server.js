@@ -19,28 +19,28 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // connect to mongodb
 mongoose.set('strictQuery', false)
 mongoose.connect(process.env.DB, () => {
-  console.log('Connection has been made')
+    console.log('Connection has been made')
 })
-  .catch((error) => {
-    console.error('App starting error:', error)
-    process.exit(1)
-  })
+    .catch((error) => {
+        console.error('App starting error:', error)
+        process.exit(1)
+    })
 
 // include controllers
 fs.readdirSync('controllers').forEach((file) => {
-  if (file.substr(-3) == '.js') {
-    const route = require('./controllers/' + file)
-    route.controller(app)
-  }
+    if (file.substr(-3) == '.js') {
+        const route = require('./controllers/' + file)
+        route.controller(app)
+    }
 })
 
 router.get('/', (req, res) => {
-  res.json({
-    message: 'API Initialized!'
-  })
+    res.json({
+        message: 'API Initialized!'
+    })
 })
 
 app.use('/', router)
 app.listen(8081, () => {
-  console.log('api running on port 8081')
+    console.log('api running on port 8081')
 })

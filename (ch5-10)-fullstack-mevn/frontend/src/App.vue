@@ -71,7 +71,7 @@ export default {
           return 'Contact'
         } else if (routeName === 'addMovie') {
           return 'Add Movie'
-        } else if (routeName === 'movie'){
+        } else if (routeName === 'movie') {
           return 'Movie'
         }
 

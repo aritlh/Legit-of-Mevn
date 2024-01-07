@@ -32,22 +32,18 @@ const { handleSubmit, handleReset } = useForm({
     validationSchema: {
         name(value) {
             if (value?.length >= 2) return true
-
             return 'Name needs to be at least 2 characters.'
         },
         description(value) {
             if (value) return true
-
             return 'Please add movie description'
         },
         release_year(value) {
             if (value) return true
-
             return 'Select an item.'
         },
         genre(value) {
             if (value) return true
-
             return 'Movie must have a genre.'
         }
     }
@@ -70,7 +66,7 @@ const items = ref([
     '2010'
 ])
 
-const msg = ref('')
+// const msg = ref('')
 
 const submit = handleSubmit(async () => {
     // msg.value = JSON.stringify(values, null, 2)

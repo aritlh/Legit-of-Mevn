@@ -5,13 +5,14 @@
                 <v-card-title>{{ movie.name }}</v-card-title>
                 <v-card-subtitle>{{ movie.release_year }} - {{ movie.genre }}</v-card-subtitle>
             </div>
-            <v-card-text>Description: {{ movie.description }}</v-card-text>
+            <v-card-text v-html="movie.description"></v-card-text>
+            <Rating />
         </v-card>
     </div>
 </template>
 
-
 <script setup>
+import Rating from '../../partials/Rating.vue';
 import axios from 'axios';
 import VueSweetalert2 from 'sweetalert2'
 import { onMounted, ref } from 'vue';
